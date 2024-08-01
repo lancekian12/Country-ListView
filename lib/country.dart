@@ -68,8 +68,7 @@ class Country extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SizedBox(
-        width: double.infinity,
+      body: Center(
         child: Container(
           margin: const EdgeInsets.fromLTRB(20, 0, 20, 20),
           child: CountryListview(country: _country),

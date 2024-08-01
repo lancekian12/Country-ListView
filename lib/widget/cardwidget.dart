@@ -9,6 +9,7 @@ class CardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: SizedBox(
+        height: 150,
         child: Padding(
           padding: const EdgeInsets.symmetric(
             horizontal: 16,
@@ -21,13 +22,16 @@ class CardWidget extends StatelessWidget {
                 width: 50,
               ),
               const SizedBox(width: 50),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(countryModel.name, textAlign: TextAlign.left),
-                  Text(countryModel.continent, textAlign: TextAlign.left),
-                  Text(countryModel.language, textAlign: TextAlign.left),
-                ],
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(countryModel.name, textAlign: TextAlign.left),
+                    Text(countryModel.continent, textAlign: TextAlign.left),
+                    Text(countryModel.language, textAlign: TextAlign.left),
+                  ],
+                ),
               )
             ],
           ),
