@@ -20,7 +20,7 @@ class Country extends StatelessWidget {
       flag: 'assets/images/switzerland.png',
       name: "Switzerland",
       continent: "Europe",
-      language: "German, French, Italian, Romansh",
+      language: "French, Italian, Romansh",
     ),
     CountryModel(
       flag: 'assets/images/newzealand.png',
